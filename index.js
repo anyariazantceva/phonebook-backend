@@ -141,7 +141,7 @@ app.post("/api/persons", (request, response, next) => {
 });
 
 // handler of requests with unknown endpoint
-app.use(unknownEndpoint);
+// app.use(unknownEndpoint);
 app.use(errorHandler);
 
 const PORT = process.env.PORT;
